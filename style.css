@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #dceefe;
+  font-family: sans-serif;
+  background-color: rgb(2, 12, 12);
+}
+.container {
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+.home {
+  margin: 100px auto 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 100px;
+}
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-top: 28px;
+  justify-self: end;
+  margin-right: 2rem;
+  height: 40px;
+  display: flex;
+}
+nav {
+  margin-right: 20px;
+  display: flex;
+  gap: 40px;
+}
+
+.email {
+  grid-column: 1/2;
+  justify-self: start;
+  align-self: center;
+  display: block;
+  writing-mode: vertical-lr;
+  margin-left: 2rem;
+  -webkit-transform: rotate(-180deg);
+}
+.info {
+  width: 400px;
+}
+h4,
+h1 {
+  color: #dceefe;
+  margin: 10px;
+
+  text-decoration: double;
+}
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  font-size: 55px;
+  text-decoration: wavy;
+}
+button {
+  color: #fff;
+  background-color: black;
+  border: solid #dceefe;
+
+  cursor: pointer;
+  margin-top: 32px;
+  padding: 10px;
+}
+
+button:hover {
+  color: black;
+  background-color: #dceefe;
+}
+.social,
+ul {
+  justify-self: center;
+  align-self: center;
+  display: block;
+  list-style-type: none;
+}
+li {
+  font-size: 25px;
+  margin: 28px;
+  padding-right: 0;
+}
+a {
+  color: #a31aee;
+  text-decoration: none;
+}
+nav a {
+  font-weight: 600;
+
+  align-self: center;
+  padding: 4px;
+}
+nav a:hover {
+  cursor: pointer;
+  color: #eee9e9;
+  background-color: #32024c;
+  transform: scale3d(1.1, 1.2, 6.2);
+}
+.d {
+  color: burlywood;
+}
+a:active {
+  cursor: pointer;
+  color: #eee9e9;
+}
+nav a:active {
+  background-color: #a41aee6e;
+}
+
+img {
+  border-radius: 100px;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.services {
+  margin: 0 auto;
+  margin-top: 2rem;
+  height: 50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  margin: 2%;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 28px;
+}
+
+.card-container {
+  position: relative;
+
+  display: flex;
+  min-height: 100%;
+  width: 92vw;
+  justify-content: space-around;
+  background-color: #32024c;
+  margin-bottom: 3rem;
+}
+.ser {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15rem;
+  margin: 1%;
+  width: 30rem;
+  background-color: #230732;
+  font-weight: 100;
+  box-shadow: 10px 10px 10px 0 rgba(2, 12, 12, 0.264);
+  font-size: 2rem;
+  transition: all 0.8s;
+}
+.one{
+filter: brightness(2);}
+
+.ser:hover {
+  /* background-color: #2307328a; */
+  filter: brightness(2);
+  background-image: url("img/ad-campaign_7457435.png");
+  background-position: center center;
+  transform: translateY(-20px);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.ser:hover:nth-child(2) {
+  /* background-color: #2307328a; */
+  filter: brightness(2);
+  background-image: url("img/poster_1787005.png");
+  background-position: center center;
+  transform: translateY(-20px);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.ser:hover:nth-child(3) {
+  /* background-color: #2307328a; */
+  transform: translateY(-20px);
+  filter: brightness(2);
+  background-image: url("img/signpost_8488134.png");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.contact {
+  height: 80vh;
+  margin-bottom: 10rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-image: url("https://t4.ftcdn.net/jpg/00/77/00/79/360_F_77007961_Ze59zhOpOUAEK901m3SH8M5mw3bBOXUo.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.form {
+  background: linear-gradient(#180224, rgba(1, 4, 33, 0.588));
+  position: relative;
+  height: 68vh;
+  margin-top: 1.5rem;
+  border-radius: 50px;
+  width: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-transform: capitalize;
+}
+input {
+  height: 3rem;
+  border: none;
+  background-color: #d8adf01b;
+  border-radius: 20px;
+  text-align: center;
+  width: 100%;
+  color: #dceefe;
+  margin-top: 2rem;
+}
+
+.name {
+  width: 48%;
+}
+
+form button {
+  padding: 10px 25px;
+}
